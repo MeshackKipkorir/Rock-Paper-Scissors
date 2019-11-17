@@ -37,3 +37,5 @@ def play_RPS():
   user_choice = user_choice.upper()
   opt = randint(0,2)
   computer_choice = options[opt]
+  decide_winner(user_choice,computer_choice)
+
