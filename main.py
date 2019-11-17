@@ -3,6 +3,7 @@ rock ,paper, scissors game
 """
 
 from random import randint
+from time import sleep
 
 options = ["ROCK","PAPER","SCISSORS"]
 message = {
@@ -14,7 +15,9 @@ message = {
 #this functions decides the winner
 def decide_winner(user_choice, computer_choice):
   print "Your choice is %s :" %(user_choice)
+  sleep(3)
   print "The computer choice is %s :" %(computer_choice)
+  sleep(3)
   
   if user_choice == computer_choice:
     print message['tie']
