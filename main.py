@@ -30,3 +30,10 @@ def decide_winner(user_choice, computer_choice):
   else:
     print message["lost"]
 
+#play function
+def play_RPS():
+  print "*** Rock , Papers, Scissors begins ***"
+  user_choice = raw_input("Enter Rock, Paper, or Scissors")
+  user_choice = user_choice.upper()
+  opt = randint(0,2)
+  computer_choice = options[opt]
